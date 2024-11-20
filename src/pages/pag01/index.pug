@@ -1,0 +1,143 @@
+extends ../../templates/page/template.page-base-adaptativo.pug
+
+block styles
+	link(rel="stylesheet", href="style.css")
+
+block body
+	body(prev-hide, next-hide, menu-hide)
+
+		header.wow.up
+			+image('logo.png', 'logo')
+		
+		section.sec1
+			.flex
+				+image('img01.png', 'img left')
+				.boxText.right
+					h1 Contribuições da Assistência Social para a Educação Integral
+					p A inter-relação entre a educação integral e a intersetorialidade é essencial para garantir uma abordagem abrangente no desenvolvimento das crianças e adolescentes, especialmente no contexto da educação pública. Muitas dessas crianças possuem necessidades que vão além da sala de aula, demandando uma maior integração entre a Educação e a Assistência Social.
+		
+		section.sec2
+			.box.up
+				p Isso se torna particularmente relevante no Brasil, onde há a necessidade de avançar na efetivação dos direitos humanos e na promoção de uma proteção social universal, integrada e democrática.
+		
+		section.sec3
+			p.up Tais medidas são fundamentais para combater o racismo estrutural e enfrentar as desigualdades de gênero e sociais. Contudo, a falta de reformas estruturantes e a implementação ineficaz de políticas públicas têm perpetuado desigualdades agravadas pelos efeitos da colonização e da concentração de riqueza e poder. Esse cenário resulta em um acesso desigual à renda, à riqueza e aos bens produzidos socialmente (Silveira et al., 2021).
+			h2 Conheça mais detalhes dessas medidas abaixo:
+			.container-accordeon.up
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Sistema Único de Assistência Social (SUAS)
+					.accordeon-texto
+						p Diante desse contexto, o Sistema Único de Assistência Social (SUAS) emerge como um sistema público,  fundamental para a gestão da assistência social no Brasil. Instituído pela Lei Orgânica da Assistência Social (LOAS), o SUAS é um sistema descentralizado e participativo que tem como objetivo organizar as ações e serviços voltados à proteção social, com especial ênfase em territórios mais desiguais. Sua governança democrática visa a universalização dos serviços de assistência social, priorizando a cobertura de territórios mais afetados pelas desigualdades, desproteções e vulnerabilidades sociais.
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Centros de Referência de Assistência Social (CRAS)
+					.accordeon-texto
+						p <b>O que é?</b>
+						p Dentro dessa estrutura, os Centros de Referência de Assistência Social (CRAS) desempenham um papel essencial na promoção da educação integral e na transformação social. Esses centros oferecem suporte às famílias, garantindo não apenas a proteção social, mas também promovendo o desenvolvimento educacional, social e emocional das crianças e adolescentes. Entre as suas principais contribuições estão a oferta de atividades extracurriculares que complementam o currículo escolar tradicional, incluindo oficinas culturais e de arte, além de fortalecer vínculos familiares e comunitários.
+				.corpbtn
+					button.accordeon-title
+						.boxImg
+							+image('arrowaccordeon.svg', 'ico')
+						p Ações do CRAS
+					.accordeon-texto
+						p As ações do CRAS são especialmente importantes porque permitem uma articulação entre a escola, a família e a comunidade, criando um ambiente propício para o desenvolvimento integral dos alunos. Ao organizar atividades coletivas e oferecer oficinas e demais atividades de acompanhamento e encaminhamentos para demais políticas públicas, com ênfase na redução da pobreza e no fortalecimento de vínculos sociais, os CRAS contribuem significativamente para a redução das vulnerabilidades sociais.
+					
+		section.sec4.up
+			p O principal objetivo do CRAS é prevenir a ocorrência de vulnerabilidades e riscos sociais em territórios marcados pela desigualdade, por meio do fortalecimento das capacidades <b>protetivas e autonomia</b>, da ampliação do acesso a direitos e da promoção de um ambiente de inclusão. 
+			p As funções do CRAS incluem a oferta pública de trabalho social com famílias, por meio do Serviço de Proteção e Atenção Integral à Família (PAIF), que visa fortalecer os vínculos familiares e comunitários, <b>por meio do acesso às seguranças socioassistenciais, demais direitos e trabalho social</b>. Além disso, o CRAS oferece o Serviço de Convivência e Fortalecimento de Vínculos (SCFV) e o Serviço de Proteção Social Básica no Domicílio, voltado para pessoas idosas e com deficiência. <b>É no CRAS que os cidadãos se inscrevem no Cadastro Único para programas federais, como Minha Casa Minha Vida e o Bolsa Família</b>.
+			.flex
+				.flexButton.up(data-modal="#pop1")
+					.boxIco
+						+image('ico1.png', 'ico')
+					button.button
+						p PAIF
+				.flexButton.up(data-modal="#pop2")
+					.boxIco
+						+image('ico2.png', 'ico')
+					button.button
+						p SCFV
+				.flexButton.up(data-modal="#pop3")
+					.boxIco
+						+image('ico3.png', 'ico')
+					button.button
+						p Proteção Social Básica
+				.flexButton.up(data-modal="#pop4")
+					.boxIco
+						+image('ico4.png', 'ico')
+					button.button
+						p Primeira Infância
+		
+		#pop1
+			.flexModal
+				+image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p.pTitle Serviço de Proteção e Atenção Integral à Família (PAIF):
+					p O PAIF oferece um trabalho social continuado com famílias em situação de vulnerabilidade <b>social</b>, com o objetivo de fortalecer a função protetiva das famílias, prevenir a ruptura de vínculos e garantir o acesso a direitos. Esse serviço, oferecido necessariamente no CRAS, também promove ações que visam melhorar a qualidade de vida das famílias por meio de intervenções preventivas, <b>proativas</b> e protetivas.
+		
+		#pop2
+			.flexModal
+				+image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p.pTitle Serviço de Convivência e Fortalecimento de Vínculos (SCFV):
+					p.pTitle Esse serviço é realizado em grupos, organizados para garantir o desenvolvimento de aquisições progressivas ao longo do ciclo de vida dos usuários. Ele complementa o trabalho social com as famílias, prevenindo situações de risco social e promovendo a socialização, o fortalecimento dos vínculos familiares e a convivência comunitária. O SCFV possui um caráter preventivo e proativo, estimulando a construção de alternativas <b>emancipatórias</b> para o enfrentamento da vulnerabilidade social. <b>Milhares de adolescentes acessam este serviço em todo o Brasil</b>.
+		
+		#pop3
+			.flexModal
+				+image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p.pTitle Serviço de Proteção Social Básica no Domicílio para Pessoas com Deficiência e Idosas:
+					p Com o objetivo de prevenir a ruptura de vínculos familiares e sociais, esse serviço promove a inclusão social, garantindo direitos e incentivando a autonomia das pessoas com deficiência e idosas, além de promover a convivência familiar e comunitária. Ele atua na prevenção de riscos e na promoção da participação social, criando condições para uma convivência mais integrada e inclusiva.
+		
+		#pop4
+			.flexModal
+				+image('img05.png', 'img')
+				.boxText
+					button.modal-close
+						+image('close.png', 'ico')
+					p.pTitle Programa Primeira Infância no SUAS:
+					p Voltado para famílias com gestantes e crianças na primeira infância, ou seja de 0 a 6 anos de idade, esse programa busca fortalecer os vínculos familiares e comunitários, promover a parentalidade, ampliar o acesso a direitos e garantir o desenvolvimento integral das crianças em situação de vulnerabilidade social. O programa também promove a articulação intersetorial entre os serviços de assistência social e outras políticas públicas, como saúde e educação, garantindo integralidade nos cuidados.
+		
+		//- section.sec2.up
+			h2 O que é Educação Integral e por que ela<br> é necessária?
+			.flex.up
+				.boxText
+					.boxInteraction
+						.flexButtons
+							button.btn.btn1.open(data-target=".msg1")
+								p 01
+							button.btn.btn2(data-target=".msg2")
+								p 02
+							button.btn.btn3(data-target=".msg3")
+								p 03
+						.boxMessage
+							.msg.msg1
+								p.pTitle Além das fronteiras
+								p Pensar em Educação Integral significa pensar em uma educação que vá além das fronteiras físicas da escola e que tenha como objetivo central o desenvolvimento completo do indivíduo em seus aspectos intelectual, físico, emocional e social. Esse modelo reconhece que a escola não pode estar isolada da comunidade e das diversas realidades que os alunos vivem.
+							.msg.msg2.hide
+								p.pTitle Experiências de aprendizagem
+								p Uma educação integral deve proporcionar experiências de aprendizagem tanto dentro quanto fora da escola, estimulando os estudantes a se engajarem em práticas sociais que envolvam cooperação, solidariedade e reflexão crítica sobre o mundo ao seu redor.
+							.msg.msg3.hide
+								p.pTitle Novas formas de pensar
+								p A Educação Integral busca desenvolver novas formas de pensar, valores e atitudes que ajudem a formar cidadãos conscientes e ativos em suas comunidades. Isso é particularmente relevante em contextos de maior vulnerabilidade social, onde as crianças e os adolescentes enfrentam desafios como a fome, o medo, e a incerteza quanto ao futuro.
+				+image('img02.png', 'img right')
+					
+		//- section.sec3
+			.box.up
+				p Que este material possa inspirar práticas educativas integradas e unificadas no propósito de inovar socialmente e transformar vidas!
+		
+		//- footer.up
+			+image('logo-footer.png', 'imgFooter')
+
+block scripts
+	script(src="script.js")
